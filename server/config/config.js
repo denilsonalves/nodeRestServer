@@ -9,6 +9,18 @@ process.env.PORT = process.env.PORT || 3000;
 process.env.NODE_ENV = process.env.NODE_ENV || "dev";
 
 // =======================================
+// Vencimento do token
+// =======================================
+// 60s * 60m * 24h* 30d
+process.env.VENCIMENTO_TOKEN = 60 * 60 * 24;
+
+// =======================================
+// Geração do secret jwt
+// =======================================
+process.env.GERACAO =
+  process.env.GERACAO || "geracao-do-secret-de-desenvolvimento";
+
+// =======================================
 // BaseDados
 // =======================================
 let urlDB;
